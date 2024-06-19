@@ -140,15 +140,15 @@ const data: Payment[] = [
   },
   {
     name: "Benjamin Taylor",
-    email: "benjamin@example.com",
+    email: "benjamintay@example.com",
     lastOrder: "2024-03-30",
     method: "Stripe"
   }
 ];
 
-export default function UsersPage({}: Props) {
+export default function UsersPage({ }: Props) {
   return (
-    <div className="flex flex-col gap-5  w-full">
+    <div className="flex flex-col gap-5 w-full">
       <PageTitle title="Users" />
       <DataTable columns={columns} data={data} />
     </div>

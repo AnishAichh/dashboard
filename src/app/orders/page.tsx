@@ -118,7 +118,7 @@ const data: Payment[] = [
     order: "ORD010",
     status: "Completed",
     lastOrder: "2023-10-18",
-    method: "WeChat Pay"
+    method: "Wechat Pay"
   },
   {
     order: "ORD011",
@@ -152,9 +152,9 @@ const data: Payment[] = [
   }
 ];
 
-export default function OrdersPage({}: Props) {
+export default function OrdersPage({ }: Props) {
   return (
-    <div className="flex flex-col gap-5  w-full">
+    <div className="flex flex-col gap-5 w-full">
       <PageTitle title="Orders" />
       <DataTable columns={columns} data={data} />
     </div>
